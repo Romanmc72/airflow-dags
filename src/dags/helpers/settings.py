@@ -14,6 +14,7 @@ def default_args(**kwargs) -> dict:
         "schedule_interval": None,
         "retries": 3,
         "execution_timeout": timedelta(minutes=1),
+        "default_view": "graph",
     }
     defaults.update(**kwargs)
     return defaults
